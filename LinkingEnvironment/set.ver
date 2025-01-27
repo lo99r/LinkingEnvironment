@@ -1,0 +1,26 @@
+start ;
+gugasen 0 ;
+pack hey ;
+gugasen 1 ;
+define api_ver:6 ;
+define release_ver:0 ;
+define patch_ver:0 ;
+define sign_ver:1 ;
+define sign_patch:1 ;
+define A_ver:60001 ;
+define H_ver:6 ;
+define B_ver:1 ;
+define version:"$api.$release.$patch.$sign.$sp.$a.$h.$p" ;
+gugasen 0 ;
+*** print "$version" ;
+end 1 "run.code";
+/*
+alpha
+beta
+release candidates
+nightly
+milstone
+rt manufacturing
+release(GA)
+LTS
+*/

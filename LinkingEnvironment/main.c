@@ -10,8 +10,9 @@ int cursorXY_(int xx, int yy) {
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Cur);
 }
 // ,
-int main(int argc, char* argv[9]) {
+int main(int argc, char* argv[9]) {//al-madaj
 	system("title Starting LE6...\nmode con:cols=60 lines=100");
+	printf("Starting LE6...");
 	CONSOLE_CURSOR_INFO ConsoleCursor;
 	ConsoleCursor.bVisible = 0;
 	ConsoleCursor.dwSize = 1;

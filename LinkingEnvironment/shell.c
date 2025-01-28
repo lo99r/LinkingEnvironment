@@ -9,9 +9,19 @@ int Funsion_StartShell() {
 	//HMODULE h_aux_dll = LoadLibrary(L"aux.dll");
 	//p_ux = (int(*)())GetProcAddress(h_aux_dll, "AUX");
 	//(*p_ux)();
-	scanf_s("%[^\n]", inpur, sizeof(inpur));
-	sscanf_s("%s", input[0], sizeof(input));
-	if (strcmp(input[0], "test")) {
-		printf("print\n");
+	printf("LinkingEnvironment %d", le_ver);
+}
+
+int Funsion_shell() {
+	while (1) {
+		scanf_s("%[^\n]", inpur, sizeof(inpur));
+			sscanf_s("%s", input[0], sizeof(input));
+			if (strcmp(input[0], "test")) {
+				printf("print\n");
+			}
+			else if (strcmp(input[0], "ver")) {
+				//full_versions(le_ver, sub_ver, build_ver);
+				printf("LinkingEncironment version %d.%d.%d", le_ver, sub_ver, build_ver);
+			}
 	}
 }

@@ -43,8 +43,10 @@ typedef struct system {
 
 //char diskselet;
 
-int Funsion_shell();
-int Funsion_StartShell();
+int Funsion_shell(int siu, char string[100]);
+int Funsion_StartShell(int siu, char carss[100]);
 unsigned _stdcall Funsion_InputLiap();
+int Funsion_InputPrompt(int siu);
+int Funsion_FileFind(int siu, char files[100]);
 
 #endif

@@ -8,5 +8,3 @@ FILE* logfile;
 char argp[9][100] = { 0, };
 
 int cursorXY_(int xx, int yy);
-
-char input[9][100] = { 0, };

@@ -1,0 +1,53 @@
+[33mcommit 61bf2e89060c0a6932ff91f7f295a200b8d0a373[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mLEscript1[m[33m, [m[1;31morigin/LEscript1[m[33m)[m
+Author: 00brng@honeys.be <>
+Date:   Mon Feb 17 17:10:52 2025 +0900
+
+    1.0.0.a.P003.A10000H06-1
+
+[33mcommit 2c18bbce0a3e47da84fd10c257f5718c7e1f80f3[m[33m ([m[1;31morigin/LE6[m[33m, [m[1;32mLE6[m[33m)[m
+Author: 00brng@honeys.be <>
+Date:   Mon Feb 17 17:08:27 2025 +0900
+
+    6.0.6
+
+[33mcommit c64c72187e009e94b88d8a0686a4167625e29803[m
+Author: 00brng@honeys.be <>
+Date:   Mon Feb 17 17:06:48 2025 +0900
+
+    6.0.5
+
+[33mcommit 5eb7e5e71c40df3cedfcbaac97ac3035beeb2dca[m
+Author: 00brng@honeys.be <>
+Date:   Sat Feb 15 22:12:19 2025 +0900
+
+    '6.0.4'
+
+[33mcommit 0f223232de724a802baef7547eeba22d01bfd86a[m[33m ([m[1;31morigin/6.0.3[m[33m, [m[1;32m6.0.3[m[33m)[m
+Author: 00brng@honeys.be <>
+Date:   Tue Jan 28 15:34:38 2025 +0900
+
+    'm'
+
+[33mcommit 7f4e4560c30b44493229e6dd7066326d0730d8ac[m[33m ([m[1;31morigin/6.0.2[m[33m, [m[1;32m6.0.2[m[33m)[m
+Author: 00brng@honeys.be <>
+Date:   Tue Jan 28 12:49:39 2025 +0900
+
+    'm'
+
+[33mcommit fc163230b5669592ff18090d03843d89a379e8e9[m[33m ([m[1;31morigin/6.0.1[m[33m, [m[1;32m6.0.1[m[33m)[m
+Author: 00brng@honeys.be <>
+Date:   Mon Jan 27 22:45:46 2025 +0900
+
+    'm'
+
+[33mcommit d87c400ddcc4f38a689cad4611b235f07df2e1b5[m[33m ([m[1;32mmaster[m[33m)[m
+Author: 임태양 브로콜리회 부회장 <임태양 브로콜리회 부회장@DESKTOP-EHQOOMH>
+Date:   Mon Jan 27 21:24:10 2025 +0900
+
+    초기 커밋.
+
+[33mcommit 9d27d1098e68f85474d042c746eddcf965a9226a[m
+Author: 임태양 브로콜리회 부회장 <임태양 브로콜리회 부회장@DESKTOP-EHQOOMH>
+Date:   Mon Jan 27 21:24:07 2025 +0900
+
+    .gitattributes 및 .gitignore을(를) 추가합니다.

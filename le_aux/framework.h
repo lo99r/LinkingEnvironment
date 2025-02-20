@@ -20,6 +20,12 @@
 #define abcde_LEscript 1
 #define abcdeNo_LEscript 1
 #define programNo_LEscript 3
-#define nextUpdate_LEscript 65536
+#define nextUpdate_LEscript 65537
 #define LEversion_LEscript 6
-#define build_LEscript 1
+#define build_LEscript 2
+#define LE2 0
+#define LE3 6
+
+typedef struct LEscript_shell_Api {
+	int a;
+};

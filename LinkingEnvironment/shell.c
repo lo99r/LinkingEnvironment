@@ -54,17 +54,20 @@ int Funsion_shell(int siu, char string[100]) {
 		}
 		else if (strcmp(input[0], "ver") == 0) {
 			//full_versions(le_ver, sub_ver, build_ver);
-			printf("LinkingEncironment version %d.%d.%d", le_ver, sub_ver, build_ver);
+			printf("LinkingEncironment version %d.%d.%d\n", le_ver, sub_ver, build_ver);
 		}
 		else if (strcmp(input[0], "opsiontest") == 0) {
 			//sscanf_s(inpur, "%s", input[1], sizeof(input[1]));
 			strcpy(input[1], babad_gugas);
 			if (strcmp(input[1], "opsiontest") == 0) {
-				printf("t");
+				printf("t\n");
 			}
 		}
 		else if (strcmp(input[0], "exit") == 0) {
 			return 1;
+		}
+		else {
+			printf("this tokens is not comand...\n");
 		}
 		break;
 	}

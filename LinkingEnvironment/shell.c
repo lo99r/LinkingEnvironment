@@ -2,12 +2,18 @@
 
 //full_versions
 static int (*p_ux)();
+static int (*pro_rodecc)();
+static int (*str_rodecc)(char);
+static int(*int_rodecc)(int);
 extern char input[9][100];
 char inpur[100] = {0,};
 extern char bad_input[100];
 extern FILE* logfile;
 int shell_Exit = 0;
 int sheller = 0;
+FILE* shell_ScriptFile;
+HMODULE le_aux;
+HMODULE LEPlud;
 
 int Funsion_StartShell(int siu, char carss[100]) {
 	//HMODULE h_aux_dll = LoadLibrary(L"aux.dll");
@@ -24,6 +30,16 @@ int Funsion_StartShell(int siu, char carss[100]) {
 		}
 		goto loog;
 		loogg:
+	}
+	else if (siu == 1) {
+		shell_ScriptFile = fopen(carss, "r");
+		if (shell_ScriptFile == NULL) {
+			printf("error\n");
+			system("pause\n");
+		}
+		while (1) {
+			shell_Exit = Funsion_FileFind(siu, carss[100]);
+		}
 	}
 	else {
 		//
@@ -49,8 +65,8 @@ int Funsion_shell(int siu, char string[100]) {
 		babad_gugas = strtok(inpur, " ");
 		strcpy(input[0], inpur);
 		//sscanf_s(inpur, "%s", input[0], sizeof(input[0]));
-		if (strcmp(input[0], "test") == 0) {
-			printf("print\n");
+		if (strcmp(input[0], "help") == 0) {
+			printf("help\nver\nopsiontest\nexit\n");
 		}
 		else if (strcmp(input[0], "ver") == 0) {
 			//full_versions(le_ver, sub_ver, build_ver);
@@ -62,6 +78,13 @@ int Funsion_shell(int siu, char string[100]) {
 			if (strcmp(input[1], "opsiontest") == 0) {
 				printf("t\n");
 			}
+		}
+		else if (strcmp(input[0], "dll") == 0) {
+			strcpy(input[1], babad_gugas);
+			le_aux = LoadLibrary(L"le_aux.dll");
+			LEPlud = LoadLibrary(L"LEPlud.dll");
+			FreeLibrary(le_aux);
+			FreeLibrary(LEPlud);
 		}
 		else if (strcmp(input[0], "exit") == 0) {
 			return 1;

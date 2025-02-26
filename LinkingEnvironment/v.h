@@ -41,6 +41,11 @@ typedef struct system {
 	}Var3X;
 }system_1;
 
+typedef enum creamType {
+	num,
+	bul
+}CreamType;
+
 //char diskselet;
 
 int Funsion_shell(int siu, char string[100]);

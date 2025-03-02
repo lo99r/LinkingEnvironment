@@ -14,6 +14,7 @@ int sheller = 0;
 FILE* shell_ScriptFile;
 HMODULE le_aux;
 HMODULE LEPlud;
+HMODULE LashnaScript;
 
 int Funsion_StartShell(int siu, char carss[100]) {
 	//HMODULE h_aux_dll = LoadLibrary(L"aux.dll");
@@ -80,11 +81,17 @@ int Funsion_shell(int siu, char string[100]) {
 			}
 		}
 		else if (strcmp(input[0], "dll") == 0) {
+			//
 			strcpy(input[1], babad_gugas);
-			le_aux = LoadLibrary(L"le_aux.dll");
-			LEPlud = LoadLibrary(L"LEPlud.dll");
-			FreeLibrary(le_aux);
-			FreeLibrary(LEPlud);
+			babad_gugas = strtok(input[1], " ");
+			strcpy(input[2], babad_gugas);
+			if (strcmp(input[2], "LashnaScript") == 0) {
+				LashnaScript = LoadLibrary(L"LashnaScript.dll");
+			}
+			//le_aux = LoadLibrary(L"le_aux.dll");
+			//LEPlud = LoadLibrary(L"LEPlud.dll");
+			//FreeLibrary(le_aux);
+			//FreeLibrary(LEPlud);
 		}
 		else if (strcmp(input[0], "exit") == 0) {
 			return 1;

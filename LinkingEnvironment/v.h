@@ -30,7 +30,11 @@
 #define curposgens(x, y) SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), {(short)x, (short)y})
 #define ands(hexbinn) (hexbinn == 0) ? 0 : ((hexbinn == 1) ? 0 : ((hexbinn == 2) ? 0 : 1)))
 #define ors(hexbinn) (hexbinn == 0) ? 0 : ((hexbinn == 1) ? 1 : ((hexbinn == 2) ? 1 : 1)))
-#define threads(toroop) _beginthreadex(NULL, 0, toroop, 0, 0, NULL);
+#define threads(toroop) _beginthreadex(NULL, 0, toroop, 0, 0, NULL)
+#define LString(x) L##x
+#define FIE ;
+#define start {
+#define theEnd }
 
 //unsigned _stdcall
 

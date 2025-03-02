@@ -28,7 +28,7 @@ int main(int argc, char* argv[9]) {//al-madaj
 	}
 	else {
 		printf("gabapsen argc ashaxen. nuduruunam.\n");
-		scanf("%[^\n]", argp[1]);
+		scanf_s("%[^\n]", argp[1], sizeof(argp[1]));
 		if (strcmp(argp[1], "set") == 0) {
 			Funsion_StartShell(0, "");
 		}

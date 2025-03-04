@@ -93,6 +93,13 @@ int Funsion_shell(int siu, char string[100]) {
 			//FreeLibrary(le_aux);
 			//FreeLibrary(LEPlud);
 		}
+		else if (strcmp(input[0], "freeDll") == 0) {
+			freeLibrary(LashnaScript);
+		}
+		else if (strcmp(input[0], "scriptLashna") == 0) {
+			int_rodecc = (int(*)(int))GetProcAddress(LashnaScript, "LashnaScript");
+			int_rodecc(0);
+		}
 		else if (strcmp(input[0], "exit") == 0) {
 			return 1;
 		}
